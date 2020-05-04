@@ -35,9 +35,6 @@ COPY enviroment.yaml /enviroment.yaml
 RUN conda env create -f enviroment.yaml
 
 WORKDIR /notebooks
-# Activate Source
-CMD source activate fastai
-CMD source ~/.bashrc
 
 RUN chmod -R a+w /notebooks
 WORKDIR /notebooks
